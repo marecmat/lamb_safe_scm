@@ -1,13 +1,13 @@
 import numpy as np 
 import matplotlib.pyplot as plt 
 from matplotlib.lines import Line2D
-from phd_lib.plotting import matplot_header
+# from phd_lib.plotting import matplot_header
 
-cycle = matplot_header(fontsize=12, colors='ibm')
+# cycle = matplot_header(fontsize=12, colors='ibm')
 
-bleu  = cycle[-1]
-rouge = cycle[1]
-jaune = cycle[0]
+bleu  = 'tab:blue' #cycle[-1]
+rouge = 'r' #cycle[1]
+jaune = 'tab:orange' #cycle[0]
 fig, ax = plt.subplots(1, 2, figsize=(18/2.54, 8/2.54))
 
 disp = np.loadtxt('disp_roots.csv', dtype=complex)

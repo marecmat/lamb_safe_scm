@@ -46,7 +46,7 @@ def build_mat_elem(h):
     return m_elem_quad, k_elem_quad, c_elem_quad, c_elem_quad.transpose()
 
 
-def build_global_matrices(nb_elem, L, params, shape_fun='lobatto'):
+def build_global_matrices(nb_elem, L, params):
 
     lamda, mu, rho = params
     # print(rho, lamda, mu)
